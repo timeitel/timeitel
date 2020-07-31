@@ -2,7 +2,7 @@
 
 ![bg][banner]
 I'm a full stack software engineer that likes experimenting with cutting edge tech, usually at my own cost.
-- ❤️ Jamstack & Flutter
+- ❤️ Jamstack, Flutter & Firebase
 - 🌏 [Website][website]
 - 👔 [LinkedIn][linkedin] 
 
