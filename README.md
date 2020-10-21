@@ -3,11 +3,12 @@
 ![bg][banner]
 I'm a full stack software engineer that ~gets frustrated with~ likes experimenting with cutting edge and pre-release tech.
 
-❤️ Jamstack, Flutter, Azure & Firebase 
+❤️ React | Svelte | Flutter | .NET | Cloud Computing | VIM
 
 ## Feel free to reach out
 
-[![linkedin-shield]][linkedin] 
+[![linkedin-shield]][linkedin]
+
 <!--- [![portfolio-shield]][website] --->
 
 [banner]: https://raw.githubusercontent.com/timeitel/timeitel/master/banner.svg
