@@ -44,6 +44,9 @@ ZSH_THEME="spaceship"
 # SPACESHIP_DIR_PREFIX='' # disable directory prefix, cause it's not the first section
 # SPACESHIP_DIR_TRUNC='1' # show only last directory
 
+# PACKAGE
+SPACESHIP_PACKAGE_SHOW="false"
+
 # # GIT
 # # Disable git symbol
 SPACESHIP_GIT_SYMBOL="" # disable git prefix
