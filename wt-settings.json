@@ -3,18 +3,12 @@
 
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",
-
   "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-
   "profiles": {
     "defaults": {
-      // Put settings here that you want to apply to all profiles
-      // "fontFace": "DelugiaCode NF, Cascadia Code Mono PL"
-      "colorScheme": "Ocean Dark",
-      "fontFace": "Fira Code, CascadiaCode Nerd Font",
-      "useAcrylic": false,
-      "tabTitle": "⚡ PS",
-      "icon": ""
+      "colorScheme": "Nord",
+      "fontFace": "CascadiaCode Nerd Font",
+      "useAcrylic": false
     },
     "list": [
       {
@@ -41,35 +35,17 @@
         "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
         "hidden": false,
         "name": "Ubuntu",
-        "source": "Windows.Terminal.Wsl"
+        "source": "Windows.Terminal.Wsl",
+        "icon": "",
+        "tabTitle": "WSL",
+        "suppressApplicationTitle": true
       }
     ]
   },
 
   // Add custom color schemes to this array
   "schemes": [
-    {
-      "name": "Dracula",
-      "background": "#272935",
-      "black": "#272935",
-      "blue": "#BD93F9",
-      "brightBlack": "#555555",
-      "brightBlue": "#BD93F9",
-      "brightCyan": "#8BE9FD",
-      "brightGreen": "#50FA7B",
-      "brightPurple": "#FF79C6",
-      "brightRed": "#FF5555",
-      "brightWhite": "#FFFFFF",
-      "brightYellow": "#F1FA8C",
-      "cyan": "#6272A4",
-      "foreground": "#F8F8F2",
-      "green": "#50FA7B",
-      "purple": "#6272A4",
-      "red": "#FF5555",
-      "white": "#F8F8F2",
-      "yellow": "#FFB86C"
-    },
-    {
+        {
       "name": "Ocean Dark",
       "background": "#1D2027",
       "black": "#2b303b",
@@ -84,15 +60,58 @@
       "brightYellow": "#ebcb8b",
       "cyan": "#96b5b4",
       "foreground": "#c0c5ce",
-      "green": "#a3be8c",
+      // "green": "#a3be8c",
+      "green": "#193500",
       "purple": "#b48ead",
       "red": "#bf616a",
       "white": "#c0c5ce",
       "yellow": "#ebcb8b"
+    },
+    {
+      "name": "Nord",
+      "foreground": "#D8DEE9",
+      "background": "#2E3440",
+      "black": "#3B4252",
+      "red": "#BF616A",
+      // "green": "#A3BE8C",
+      "green": "#2E3440",
+      "yellow": "#EBCB8B",
+      "blue": "#81A1C1",
+      "purple": "#B48EAD",
+      "cyan": "#88C0D0",
+      "white": "#E5E9F0",
+      "brightBlack": "#4C566A",
+      "brightRed": "#BF616A",
+      "brightGreen": "#A3BE8C",
+      "brightYellow": "#EBCB8B",
+      "brightBlue": "#81A1C1",
+      "brightPurple": "#B48EAD",
+      "brightCyan": "#88C0D0",
+      "brightWhite": "#E5E9F0"
     }
   ],
-
   // Add any keybinding overrides to this array.
   // To unbind a default keybinding, set the command to "unbound"
-  "keybindings": []
+  "keybindings": [
+    {
+      "command": "closeTab",
+      "keys": "ctrl+w"
+    },
+    {
+      "command": "newTab",
+      "keys": "ctrl+t"
+    },
+    {
+      "command": "closeOtherTabs",
+      "keys": "ctrl+t+o"
+    },
+    {
+      "command": "scrollUp",
+      "keys": "ctrl+u"
+    },
+    {
+      "command": "scrollDown",
+      "keys": "ctrl+d"
+    }
+  ]
 }
