@@ -92,6 +92,18 @@ SPACESHIP_PYENV_PREFIX="python:("
 SPACESHIP_PYENV_SUFFIX=") "
 SPACESHIP_PYENV_SYMBOL=""
 
+# Aliases
+alias g='git'
+alias gs='git status -s'
+alias gpl='git pull'
+alias gps='git push'
+alias ga='git add'
+alias gaa='git add -A'
+alias gu='git reset --mixed'
+alias gc='git commit -m'
+alias gl='git log --all --decorate --oneline --graph'
+alias gr='git rebase -i'
+
 # Operate by word in terminal
 bindkey -e
 # Control + backspace
