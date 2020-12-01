@@ -70,7 +70,8 @@
     {
       "name": "Nord",
       "foreground": "#D8DEE9",
-      "background": "#2E3440",
+      "background": "#1D2027",
+      // "background": "#2E3440",
       "black": "#3B4252",
       "red": "#BF616A",
       // "green": "#A3BE8C",
