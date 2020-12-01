@@ -102,7 +102,8 @@ alias gaa='git add -A'
 alias gu='git reset --mixed'
 alias gc='git commit -m'
 alias gl='git log --all --decorate --oneline --graph'
-alias gr='git rebase -i'
+alias gr='git remote -v'
+alias grb='git rebase -i'
 
 # Operate by word in terminal
 bindkey -e
