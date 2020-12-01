@@ -91,3 +91,11 @@ SPACESHIP_VENV_SUFFIX=") "
 SPACESHIP_PYENV_PREFIX="python:("
 SPACESHIP_PYENV_SUFFIX=") "
 SPACESHIP_PYENV_SYMBOL=""
+
+# Operate by word in terminal
+bindkey -e
+# Control + backspace
+bindkey '^H' backward-kill-word
+# Control + arrows
+bindkey ";5C" forward-word
+bindkey ";5D" backward-word
