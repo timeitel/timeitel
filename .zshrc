@@ -94,6 +94,6 @@ prompt spaceship
 
 # Plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /mnt/c/Users/Tim.Eitel/zsh-you-should-use/you-should-use.plugin.zsh
+source ~/.zsh/zsh-you-should-use/you-should-use.plugin.zsh
 # zsh syntax highlighting to be sourced last
-source /mnt/c/Users/Tim.Eitel/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
