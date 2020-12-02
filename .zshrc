@@ -22,7 +22,7 @@ alias left='ls -t -1'
 alias zs='source ~/.zshrc'
 alias c='code '
 alias v='vim '
-alias e='explorer .'
+alias e='explorer.exe .'
 
 alias cg='cd `git rev-parse --show-toplevel`'
 alias gs='git status -s'
@@ -47,6 +47,10 @@ bindkey ';5C' forward-word
 bindkey ';5D' backward-word
 # Delete current line
 bindkey '^[w' kill-whole-line
+# Accept zsh-suggestion with ctrl+space
+bindkey '^ ' autosuggest-accept
+# Accept & execute zsh-suggestion with ctrl+enter
+bindkey '^J' autosuggest-execute
 
 # Spaceship prompt
 SPACESHIP_GIT_SYMBOL=''
