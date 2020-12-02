@@ -113,6 +113,22 @@
     {
       "command": "scrollDown",
       "keys": "ctrl+d"
+    },
+        {
+      "command": { "action": "moveFocus", "direction": "down" },
+      "keys": "alt+j"
+    },
+    {
+      "command": { "action": "moveFocus", "direction": "left" },
+      "keys": "alt+h"
+    },
+    {
+      "command": { "action": "moveFocus", "direction": "right" },
+      "keys": "alt+l"
+    },
+    {
+      "command": { "action": "moveFocus", "direction": "up" },
+      "keys": "alt+k"
     }
   ]
 }
