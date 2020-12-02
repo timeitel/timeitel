@@ -22,6 +22,7 @@ alias left='ls -t -1'
 alias zs='source ~/.zshrc'
 alias c='code '
 alias v='vim '
+alias e='explorer .'
 
 alias cg='cd `git rev-parse --show-toplevel`'
 alias gs='git status -s'
