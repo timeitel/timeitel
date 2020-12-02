@@ -28,6 +28,7 @@ alias cls='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
 
+alias g='git'
 alias cg='cd `git rev-parse --show-toplevel`'
 alias gs='git status -s'
 alias gpl='git pull'
@@ -39,7 +40,10 @@ alias gc='git commit -m'
 alias gl='git log --all --decorate --oneline --graph'
 alias gr='git remote -v'
 alias grb='git rebase -i'
-alias g='git'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gbd='git branch -d'
+alias gco='git checkout -b'
 
 # Operate by word in terminal
 bindkey -e
