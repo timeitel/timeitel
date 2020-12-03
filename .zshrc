@@ -27,6 +27,8 @@ alias e='explorer.exe .'
 alias cls='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias copy='clip.exe'
+alias cwd='pwd | clip.exe'
 
 alias g='git'
 alias cg='cd `git rev-parse --show-toplevel`'
