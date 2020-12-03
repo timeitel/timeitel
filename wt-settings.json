@@ -108,11 +108,11 @@
     },
     {
       "command": "scrollUp",
-      "keys": "ctrl+u"
+      "keys": "ctrl+y"
     },
     {
       "command": "scrollDown",
-      "keys": "ctrl+d"
+      "keys": "ctrl+e"
     },
         {
       "command": { "action": "moveFocus", "direction": "down" },
