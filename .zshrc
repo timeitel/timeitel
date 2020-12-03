@@ -45,7 +45,7 @@ alias grb='git rebase -i'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gbd='git branch -d'
-alias gco='git checkout -b'
+alias gco='git checkout'
 
 # Operate by word in terminal
 bindkey -e
@@ -110,5 +110,3 @@ prompt spaceship
 # Plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-you-should-use/you-should-use.plugin.zsh
-# zsh syntax highlighting to be sourced last
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
