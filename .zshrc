@@ -62,6 +62,10 @@ bindkey '^ ' autosuggest-accept
 # Accept & execute zsh-suggestion with ctrl+enter
 bindkey '^J' autosuggest-execute
 
+# Scroll bindings to be set in windows terminal
+bindkey -r '^e'
+bindkey -r '^y'
+
 # Spaceship prompt
 SPACESHIP_GIT_SYMBOL=''
 SPACESHIP_GIT_BRANCH_PREFIX=''
