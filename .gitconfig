@@ -1,0 +1,13 @@
+[user]
+	email = timeitel@outlook.com
+	name = Tim Eitel
+[diff]
+    tool = vscode
+[merge]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[core]
+	editor = code --wait
