@@ -48,7 +48,7 @@ alias cwd='pwd | clip.exe'
 
 alias g='git'
 alias cg='cd `git rev-parse --show-toplevel`'
-alias gs='git status -s'
+alias gs='git status'
 alias gpl='git pull'
 alias gf='git fetch origin'
 alias gps='git push'
