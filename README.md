@@ -1,9 +1,9 @@
 # Hi, I'm Tim 👋
 
 ![bg][banner]
-I'm a full stack software engineer that ~gets frustrated with~ likes experimenting with cutting edge and pre-release tech.
+I'm a full stack software developer in Perth, WA.
 
-❤️ React | Svelte | Flutter | .NET | Cloud Computing | VIM
+❤️ React | Flutter | .NET | Cloud | VIM
 
 ## Feel free to reach out
 
