@@ -1,0 +1,5 @@
+"\e[3;5~": shell-kill-word
+"\C-H": shell-backward-kill-word
+";5C": forward-word
+";5D": backward-word
+set bell-style none
