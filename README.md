@@ -9,6 +9,7 @@ I'm a full-stack web developer and cloud architect in Perth, WA.
 - PostgreSQL 
 - NoSQL
 - GCP
+- Docker
 
 ### Feel free to reach out 👨‍💼 
 
