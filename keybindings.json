@@ -27,40 +27,12 @@
     "when": "textInputFocus"
   },
   {
-    "key": "alt+k",
-    "command": "selectPrevSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "alt+j",
-    "command": "selectNextSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
     "key": "ctrl+n",
     "command": "explorer.newFile"
   },
   {
-    "key": "ctrl+alt+n",
+    "key": "ctrl+shift+n",
     "command": "explorer.newFolder"
-  },
-  {
-    "key": "alt+j",
-    "command": "workbench.action.quickOpenNavigateNextInFilePicker",
-    "when": "inFilesPicker && inQuickOpen"
-  },
-  {
-    "key": "alt+k",
-    "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
-    "when": "inFilesPicker && inQuickOpen"
-  },
-  {
-    "key": "ctrl+9",
-    "command": "cursorUndo"
-  },
-  {
-    "key": "ctrl+8",
-    "command": "cursorRedo"
   },
   /*
    * Add ctrl+k mapping for git actions and error/change jumping
@@ -70,105 +42,17 @@
     "command": "git.openChange"
   },
   {
-    "key": "ctrl+k ctrl+d",
-    "command": "-editor.action.moveSelectionToNextFindMatch",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+k ctrl+e",
-    "command": "editor.action.marker.nextInFiles",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+k ctrl+shift+e",
-    "command": "editor.action.marker.prevInFiles",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+k ctrl+n",
-    "command": "workbench.action.compareEditor.nextChange",
-    "when": "textCompareEditorActive"
-  },
-  {
-    "key": "ctrl+k ctrl+shift+n",
-    "command": "workbench.action.compareEditor.previousChange",
-    "when": "textCompareEditorActive"
-  },
-  {
-    "key": "ctrl+k ctrl+n",
-    "command": "workbench.action.editor.nextChange",
-    "when": "editorTextFocus && !textCompareEditorActive"
-  },
-  {
-    "key": "ctrl+k ctrl+shift+n",
-    "command": "workbench.action.editor.previousChange",
-    "when": "editorTextFocus && !textCompareEditorActive"
-  },
-  {
-    "key": "ctrl+k ctrl+n",
-    "command": "-git.unstageSelectedRanges",
+    "key": "ctrl+k ctrl+u",
+    "command": "-git.revertSelectedRanges",
     "when": "isInDiffEditor"
-  },
-  {
-    "key": "ctrl+k ctrl+u",
-    "command": "-editor.action.removeCommentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+k ctrl+u",
-    "command": "git.unstageAll"
   },
   {
     "key": "ctrl+k ctrl+r",
     "command": "git.cleanAll"
   },
   {
-    "key": "ctrl+k ctrl+shift+u",
-    "command": "git.unstage"
-  },
-  {
-    "key": "ctrl+k ctrl+s",
-    "command": "-workbench.action.openGlobalKeybindings"
-  },
-  {
-    "key": "ctrl+k ctrl+s",
-    "command": "git.stageAll"
-  },
-  {
-    "key": "ctrl+k ctrl+c",
-    "command": "-editor.action.addCommentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+k ctrl+c",
     "command": "git.commitAll"
-  },
-  {
-    "key": "ctrl+k ctrl+alt+s",
-    "command": "-git.stageSelectedRanges",
-    "when": "isInDiffEditor"
-  },
-  {
-    "key": "ctrl+k ctrl+shift+s",
-    "command": "-workbench.action.files.saveWithoutFormatting"
-  },
-  {
-    "key": "ctrl+k ctrl+r",
-    "command": "-workbench.action.keybindingsReference"
-  },
-  {
-    "key": "ctrl+k ctrl+g",
-    "command": "git.revertSelectedRanges",
-    "when": "isInDiffEditor"
-  },
-  {
-    "key": "ctrl+k ctrl+r",
-    "command": "-git.revertSelectedRanges",
-    "when": "isInDiffEditor"
-  },
-  {
-    "key": "ctrl+k ctrl+p",
-    "command": "-workbench.action.showAllEditors"
   },
   {
     "key": "ctrl+k ctrl+p",
@@ -193,24 +77,8 @@
     "key": "ctrl+g",
     "command": "workbench.view.scm"
   },
-  {
-    "key": "alt+b",
-    "command": "workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "alt+x",
-    "command": "workbench.view.extensions"
-  },
-  {
-    "key": "alt+]",
-    "command": "workbench.action.increaseViewSize"
-  },
-  {
-    "key": "alt+[",
-    "command": "workbench.action.decreaseViewSize"
-  },
   /*
-   * VsVim & VSCode *subjective* bindings / mappings for conflicts
+   * Remove VSCode or VSCodeVim mappings
    */
   {
     "key": "ctrl+j",
@@ -281,47 +149,235 @@
     "command": "-workbench.action.gotoLine"
   },
   {
-    "key": "ctrl+k e",
-    "command": "-workbench.files.action.focusOpenEditorsView",
-    "when": "workbench.explorer.openEditorsView.active"
-  },
-  {
     "key": "ctrl+g",
     "command": "-extension.vim_ctrl+g",
     "when": "editorTextFocus && vim.active && vim.use<C-g> && !inDebugRepl"
   },
-  {
-    "key": "ctrl+k ctrl+shift+s",
-    "command": "git.stage"
-  },
+  /*
+   * // Remove VSCode or VSCodeVim mappings
+   */
   {
     "key": "shift+space",
     "command": "extension.vim_escape",
     "when": "editorTextFocus && vim.active && !inDebugRepl"
   },
   {
-    "key": "ctrl+k ctrl+shift+c",
-    "command": "-copyRelativeFilePath",
-    "when": "!editorFocus"
+    "key": "shift+alt+=",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "ctrl+k ctrl+shift+c",
-    "command": "git.commitStaged"
+    "key": "ctrl+t ctrl+r",
+    "command": "workbench.action.terminal.rename"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-notebook.cell.copyDown",
+    "when": "notebookEditorFocused && !inputFocus"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-notebook.cell.copyUp",
+    "when": "notebookEditorFocused && !inputFocus"
+  },
+  {
+    "key": "shift+alt+j",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "-workbench.action.search.toggleQueryDetails",
+    "when": "inSearchEditor || searchViewletFocus"
+  },
+  {
+    "key": "ctrl+alt+d",
+    "command": "workbench.debug.action.toggleRepl",
+    "when": "debuggersAvailable"
+  },
+  {
+    "key": "ctrl+shift+y",
+    "command": "-workbench.debug.action.toggleRepl",
+    "when": "debuggersAvailable"
+  },
+  {
+    "key": "ctrl+k ctrl+e",
+    "command": "editor.action.marker.next",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+f8",
+    "command": "-editor.action.marker.next",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+m",
+    "command": "workbench.scm.focus"
+  },
+  {
+    "key": "shift+f9",
+    "command": "workbench.debug.viewlet.action.removeAllBreakpoints"
+  },
+  {
+    "key": "ctrl+k n",
+    "command": "workbench.action.editor.nextChange",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+f5",
+    "command": "-workbench.action.editor.nextChange",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+n",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "alt+f5",
+    "command": "-workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "ctrl+alt+r",
+    "command": "-extension.convertToRGBA",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+r",
+    "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.reloadWindow",
+    "when": "isDevelopment"
+  },
+  {
+    "key": "ctrl+k ctrl+v",
+    "command": "toggleVim"
+  },
+  {
+    "key": "ctrl+k ctrl+a",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusSideBar"
   },
   {
     "key": "ctrl+k ctrl+h",
-    "command": "git.viewHistory"
+    "command": "git-graph.view"
   },
   {
-    "key": "ctrl+k ctrl+shift+r",
-    "command": "git.clean"
+    "key": "ctrl+alt+i",
+    "command": "bookmarks.jumpToPrevious",
+    "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+,",
-    "command": "-workbench.action.openSettings"
+    "key": "ctrl+alt+j",
+    "command": "-bookmarks.jumpToPrevious",
+    "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+,",
-    "command": "workbench.action.openSettingsJson"
+    "key": "ctrl+alt+o",
+    "command": "bookmarks.jumpToNext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "-bookmarks.jumpToNext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "extension.js-debug.createDebuggerTerminal"
+  },
+  {
+    "key": "ctrl+k ctrl+t",
+    "command": "-workbench.action.selectTheme"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "-extension.toggleHEX",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.reopenClosedEditor"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "-workbench.action.reopenClosedEditor"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "-workbench.action.newWindow"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-extension.vim_ctrl+t",
+    "when": "editorTextFocus && vim.active && vim.use<C-t> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+k ctrl+s",
+    "command": "-workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+k ctrl+c",
+    "command": "-notebook.cell.collapseCellInput",
+    "when": "notebookCellListFocused && !inputFocus && !notebookCellInputIsCollapsed"
+  },
+  {
+    "key": "ctrl+k ctrl+c",
+    "command": "-notebook.cell.expandCellInput",
+    "when": "notebookCellInputIsCollapsed && notebookCellListFocused"
+  },
+  {
+    "key": "ctrl+k ctrl+u",
+    "command": "-editor.action.removeCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+u",
+    "command": "git.revertSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+k ctrl+r",
+    "command": "-git.revertSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "workbench.action.increaseViewSize"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "workbench.action.decreaseViewSize"
   }
 ]
