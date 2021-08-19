@@ -1,60 +1,58 @@
 {
-  "workbench.startupEditor": "newUntitledFile",
+  "workbench.startupEditor": "none",
   "workbench.iconTheme": "file-icons",
-  "liveServer.settings.donotVerifyTags": true,
   "files.autoSave": "onFocusChange",
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "editor.minimap.enabled": false,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "window.zoomLevel": 0,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "workbench.sideBar.location": "right",
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "editor.fontFamily": "Fira Code, CascadiaCode Nerd Font, Cascadia Code, 'Courier New', monospace",
   "window.menuBarVisibility": "toggle",
   "editor.fontLigatures": true,
-  "eslint.enable": true,
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ],
-  "eslint.alwaysShowStatus": true,
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "prettier.trailingComma": "none",
-  "prettier.jsxSingleQuote": true,
-  "prettier.singleQuote": true,
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
-  "vetur.format.enable": false,
-  "breadcrumbs.enabled": false,
+  "typescript.validate.enable": true,
+  "javascript.validate.enable": true,
   "zenMode.hideTabs": false,
-  "workbench.editor.enablePreview": false,
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.occurrencesHighlight": false,
   "extensions.ignoreRecommendations": false,
-  "workbench.activityBar.visible": false,
   "editor.lineNumbers": "relative",
-  "vim.neovimPath": "C:\\Users\\Tim.Eitel\\Neovim\\bin\\nvim.exe",
-  "vim.enableNeovim": true,
   /*
    * Color settings
    */
   "workbench.colorTheme": "Ocean Dark Extended",
+  "terminal.integrated.fontWeightBold": "500",
   "workbench.colorCustomizations": {
+    "list.focusBackground": "#1D2027",
     "editor.background": "#1D2027",
     "editorGroupHeader.tabsBackground": "#1D2027",
-    "tab.activeBorder": "#c0c5ce"
+    "tab.activeBorder": "#c0c5ce",
+    "terminal.background": "#2B303B",
+    "terminal.foreground": "#C0C5CE",
+    "terminalCursor.background": "#C0C5CE",
+    "terminalCursor.foreground": "#C0C5CE",
+    "terminal.ansiBlack": "#2B303B",
+    "terminal.ansiBlue": "#8FA1B3",
+    "terminal.ansiBrightBlack": "#65737E",
+    "terminal.ansiBrightBlue": "#8FA1B3",
+    "terminal.ansiBrightCyan": "#96B5B4",
+    "terminal.ansiBrightGreen": "#A3BE8C",
+    "terminal.ansiBrightMagenta": "#B48EAD",
+    "terminal.ansiBrightRed": "#BF616A",
+    "terminal.ansiBrightWhite": "#EFF1F5",
+    "terminal.ansiBrightYellow": "#EBCB8B",
+    "terminal.ansiCyan": "#96B5B4",
+    "terminal.ansiGreen": "#A3BE8C",
+    "terminal.ansiMagenta": "#B48EAD",
+    "terminal.ansiRed": "#BF616A",
+    "terminal.ansiWhite": "#C0C5CE",
+    "terminal.ansiYellow": "#EBCB8B"
   },
   "bracket-pair-colorizer-2.colors": ["#ebcb8b", "#b48ead", "#8fa1b3"],
   /*
@@ -69,115 +67,127 @@
   "vim.useCtrlKeys": true,
   "vim.highlightedyank.enable": true,
   "vim.hlsearch": true,
-  "vim.foldfix": true,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["k", "j"],
+      "commands": [
+        "extension.vim_escape",
+        "editor.action.formatDocument",
+        "workbench.action.files.save"
+      ]
+    }
+  ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "g", "r", "s"],
-      "commands": [
-        {
-          "command": "git.revertSelectedRanges"
-        }
-      ]
+      "before": ["H"],
+      "after": ["^"]
     },
     {
-      "before": ["<leader>", "g", "s", "s"],
-      "commands": [
-        {
-          "command": "git.stageSelectedRanges"
-        }
-      ]
+      "before": ["L"],
+      "after": ["$"]
     },
     {
-      "before": ["<leader>", "g", "u", "s"],
-      "commands": [
-        {
-          "command": "git.unstageSelectedRanges"
-        }
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    }
+  ],
+  // tries to find a files export and triggers show references
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "e"],
+      "after": [
+        "g",
+        "g",
+        "/",
+        "e",
+        "x",
+        "p",
+        "o",
+        "r",
+        "t",
+        " ",
+        "c",
+        "o",
+        "n",
+        "s",
+        "t",
+        "<enter>",
+        "w",
+        "w",
+        "<leader>",
+        "s",
+        "r"
       ]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "o"],
+      "before": ["<leader>", "s", "r"],
       "commands": [
-        {
-          "command": "workbench.action.gotoSymbol"
-        }
+        { "command": ":nohl" },
+        { "command": "editor.action.goToReferences" }
       ]
     },
-    // git
+    { "before": [":"], "after": [","] },
+    { "before": [","], "after": [":"] },
     {
-      "before": ["<leader>", "g", "c", "o"],
-      "commands": [
-        {
-          "command": "git.checkout"
-        }
-      ]
+      "before": ["H"],
+      "after": ["^"]
     },
     {
-      "before": ["<leader>", "g", "n", "c"],
-      "commands": [
-        {
-          "command": "merge-conflict.next"
-        }
-      ]
+      "before": ["L"],
+      "after": ["$"]
     },
-    {
-      "before": ["<leader>", "g", "s", "f"],
-      "commands": [
-        {
-          "command": "git.stage"
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "g", "s", "c"],
-      "commands": [
-        {
-          "command": "git.stage"
-        },
-        {
-          "command": "git.commitStaged"
-        }
-      ]
-    },
-    // line break
     {
       "before": ["K"],
-      "after": ["a", "<enter>", "<esc>"]
+      "after": ["i", "<enter>", "<esc>"]
+    },
+    // centres after jumping to next
+    {
+      "before": ["n"],
+      "after": ["n", "z", "z", "z", "o"]
+    },
+    {
+      "before": ["N"],
+      "after": ["N", "z", "z", "z", "o"]
     },
     // attributes
     {
       "before": ["<leader>", "d", "a"],
-      "after": ["v", "i", "<", "o", "W", "h", "d", "<esc>"]
+      "after": ["v", "i", "<", "o", "W", "h", "d", "<esc>", "<leader>", "h"]
     },
+    // add comma to eol
     {
-      "before": ["<leader>", "c", "a"],
-      "after": ["v", "i", "<", "o", "W", "c"]
-    },
-    // objects
-    {
-      "before": ["<leader>", "d", "o"],
-      "after": ["V", "a", "{", "d"]
-    },
-    {
-      "before": ["<leader>", "y", "o"],
-      "after": ["V", "a", "{", "y"]
-    },
-    // add index
-    {
-      "before": ["<leader>", "a", "i"],
-      "after": ["f", "]", "i", ",", "'"]
+      "before": ["<leader>", "a", "c"],
+      "after": ["A", ",", "<esc>", "j", "^"]
     },
     // add property
     {
       "before": ["<leader>", "a", "p"],
       "after": ["A", ",", "<enter>"]
     },
-    // add comma to eol
+    // delete property
     {
-      "before": ["<leader>", "a", "c"],
-      "after": ["A", ",", "<esc>", "j", "^"]
+      "before": ["<leader>", "d", "p"],
+      "after": ["V", "$", "%", "d"]
     },
     // add space
     {
@@ -194,6 +204,22 @@
     },
     // find and change inside <char>
     {
+      "before": ["<leader>", "`"],
+      "after": ["f", "`", "c", "i", "`"]
+    },
+    {
+      "before": ["<leader>", "\""],
+      "after": ["f", "\"", "c", "i", "\""]
+    },
+    {
+      "before": ["<leader>", "'"],
+      "after": ["f", "'", "c", "i", "'"]
+    },
+    {
+      "before": ["<leader>", ")"],
+      "after": ["f", ")", "c", "i", ")"]
+    },
+    {
       "before": ["<leader>", "("],
       "after": ["f", "(", "c", "i", "("]
     },
@@ -202,18 +228,31 @@
       "after": ["f", "{", "c", "i", "{"]
     },
     {
+      "before": ["<leader>", "}"],
+      "after": ["f", "}", "c", "i", "}"]
+    },
+    {
       "before": ["<leader>", "["],
       "after": ["f", "[", "c", "i", "["]
+    },
+    {
+      "before": ["<leader>", "]"],
+      "after": ["f", "]", "c", "i", "]"]
+    },
+    // paste line break and then buffer
+    {
+      "before": ["<leader>", "p", "l"],
+      "after": ["o", "<esc>", "p"]
+    },
+    // paste end - add spaces then paste buffer from end of word
+    {
+      "before": ["<leader>", "p", "e"],
+      "after": ["E", "a", " ", " ", "<esc>", "v", "p"]
     },
     // paste property (object)
     {
       "before": ["<leader>", "p", "p"],
       "after": ["A", ",", "<esc>", "p"]
-    },
-    // paste style (css)
-    {
-      "before": ["<leader>", "p", "s"],
-      "after": ["p", "I", ".", "<esc>", "A", " ", "{", "<enter>"]
     },
     {
       "before": ["<leader>", "f"],
@@ -224,20 +263,16 @@
       "after": ["?"]
     },
     {
-      "before": ["<leader>", "m"],
-      "commands": ["bookmarks.toggle"]
-    },
-    {
-      "before": ["<leader>", "b"],
-      "commands": ["bookmarks.list"]
-    },
-    {
       "before": ["<leader>", "h"],
       "commands": [":nohl"]
     },
     {
       "before": ["<leader>", "t", "o"],
       "commands": [":tabonly"]
+    },
+    {
+      "before": ["<leader>", "r", "s"],
+      "commands": ["workbench.files.action.showActiveFileInExplorer"]
     },
     // hack to jump over folds
     {
@@ -249,27 +284,97 @@
       "after": ["L", "z", "z"]
     }
   ],
-  "cSpell.userWords": ["CSIRO", "Eitel", "aboutme", "firestore", "timeitel"],
+  "cSpell.userWords": [
+    "CSIRO",
+    "Campbelltown",
+    "Cloudmersive",
+    "Divs",
+    "ECHAL",
+    "EEFGR",
+    "Eitel",
+    "Errored",
+    "Komo",
+    "Leaderboard",
+    "Microservices",
+    "Parens",
+    "Pathing",
+    "SENDGRID",
+    "Sidedrawer",
+    "Sidesheet",
+    "Spotify",
+    "Subsea",
+    "Treeview",
+    "Wanneroo",
+    "Xunit",
+    "aboutme",
+    "blackhawk",
+    "collapsable",
+    "containerregistry",
+    "datacapture",
+    "firestore",
+    "gcloud",
+    "googleapis",
+    "gserviceaccount",
+    "leaderboards",
+    "nanonets",
+    "nowrap",
+    "rebass",
+    "receiptuploader",
+    "scroller",
+    "secretcodes",
+    "unvalidated",
+    "wordsorless"
+  ],
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": false,
   "html.validate.scripts": false,
+  "scm.alwaysShowRepositories": true,
+  "window.title": "",
+  "files.exclude": {
+    "bin": true,
+    "obj": true,
+    "out": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.autofetch": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSurroundingLines": 8,
+  "workbench.statusBar.visible": true,
+  "editor.renderControlCharacters": true,
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[csharp]": { "editor.defaultFormatter": "ms-dotnettools.csharp" },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "dart.previewFlutterUiGuides": true,
-  "scm.alwaysShowRepositories": true,
-  "gitHistory.showEditorTitleMenuBarIcons": false,
-  "gitHistory.sourceCodeProviderIntegrationLocation": "More Actions",
-  "customizeUI.stylesheet": {
-    ".editor-actions": "display: none !important;",
-    ".toggle-view-mode.scm-action": "display: none !important;"
+  "editor.formatOnSave": true,
+  "files.eol": "\n",
+  "settingsSync.ignoredExtensions": ["dbaeumer.vscode-eslint"],
+  "diffEditor.renderSideBySide": false,
+  "redhat.telemetry.enabled": false,
+  "workbench.editor.wrapTabs": true,
+  "editor.tabSize": 8,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "debug.javascript.terminalOptions": {
+    "skipFiles": ["<node_internals>/**", "**.js"]
   },
-  "dart.flutterGutterIcons": false,
-  "window.title": "",
-  "files.exclude": {
-    ".next": true,
-    "node_modules": true
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "git.autofetch": true
+  "workbench.activityBar.visible": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.hovers.enabled": false,
+  "debug.javascript.suggestPrettyPrinting": false,
+  "editor.renderWhitespace": "none"
 }
