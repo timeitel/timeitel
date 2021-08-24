@@ -109,8 +109,13 @@
       "after": ["^"]
     }
   ],
-  // tries to find a files export and triggers show references
   "vim.normalModeKeyBindings": [
+    // jump to function signature
+    {
+      "before": ["<leader>", "s"],
+      "after": ["[", "{", "[", "{", "[", "{", "[", "{", "[", "{"]
+    },
+    // jump to function signature and show references
     {
       "before": ["<leader>", "e"],
       "after": [
@@ -140,7 +145,7 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "s", "r"],
+      "before": ["<leader>", "g", "r"],
       "commands": [
         { "command": ":nohl" },
         { "command": "editor.action.goToReferences" }
