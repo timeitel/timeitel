@@ -2,8 +2,6 @@
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "file-icons",
   "files.autoSave": "onFocusChange",
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
   "editor.minimap.enabled": false,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
@@ -21,7 +19,6 @@
   "zenMode.hideTabs": false,
   "editor.suggestSelection": "first",
   "editor.occurrencesHighlight": false,
-  "extensions.ignoreRecommendations": false,
   "editor.lineNumbers": "relative",
   /*
    * Color settings
@@ -117,7 +114,7 @@
     },
     // jump to function signature and show references
     {
-      "before": ["<leader>", "e"],
+      "before": ["<leader>", "r"],
       "after": [
         "g",
         "g",
@@ -138,7 +135,7 @@
         "w",
         "w",
         "<leader>",
-        "s",
+        "g",
         "r"
       ]
     }
@@ -244,6 +241,15 @@
       "before": ["<leader>", "]"],
       "after": ["f", "]", "c", "i", "]"]
     },
+    // paste 0 buffer - last yank
+    {
+      "before": ["<leader>", "'", "p"],
+      "after": ["\"", "0", "p"]
+    },
+    {
+      "before": ["<leader>", "'", "P"],
+      "after": ["\"", "0", "P"]
+    },
     // paste line break and then buffer
     {
       "before": ["<leader>", "p", "l"],
@@ -252,7 +258,7 @@
     // paste end - add spaces then paste buffer from end of word
     {
       "before": ["<leader>", "p", "e"],
-      "after": ["E", "a", " ", " ", "<esc>", "v", "p"]
+      "after": ["E", "a", " ", "<esc>", "v", "p"]
     },
     // paste property (object)
     {
@@ -275,10 +281,6 @@
       "before": ["<leader>", "t", "o"],
       "commands": [":tabonly"]
     },
-    {
-      "before": ["<leader>", "r", "s"],
-      "commands": ["workbench.files.action.showActiveFileInExplorer"]
-    },
     // hack to jump over folds
     {
       "before": ["<C-u>"],
@@ -290,45 +292,36 @@
     }
   ],
   "cSpell.userWords": [
-    "CSIRO",
-    "Campbelltown",
-    "Cloudmersive",
-    "Divs",
+    "aboutme",
+    "collapsable",
+    "containerregistry",
+    "datacapture",
     "ECHAL",
     "EEFGR",
     "Eitel",
     "Errored",
-    "Komo",
-    "Leaderboard",
+    "firestore",
+    "gameplay",
+    "gcloud",
+    "googleapis",
+    "gserviceaccount",
     "Microservices",
+    "nowrap",
     "Parens",
     "Pathing",
+    "rebass",
+    "receiptuploader",
+    "scroller",
+    "secretcodes",
     "SENDGRID",
     "Sidedrawer",
     "Sidesheet",
     "Spotify",
     "Subsea",
     "Treeview",
-    "Wanneroo",
-    "Xunit",
-    "aboutme",
-    "blackhawk",
-    "collapsable",
-    "containerregistry",
-    "datacapture",
-    "firestore",
-    "gcloud",
-    "googleapis",
-    "gserviceaccount",
-    "leaderboards",
-    "nanonets",
-    "nowrap",
-    "rebass",
-    "receiptuploader",
-    "scroller",
-    "secretcodes",
+    "Unticked",
     "unvalidated",
-    "wordsorless"
+    "Xunit"
   ],
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": false,
@@ -376,10 +369,10 @@
   "debug.javascript.terminalOptions": {
     "skipFiles": ["<node_internals>/**", "**.js"]
   },
-  "workbench.activityBar.visible": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.hovers.enabled": false,
   "debug.javascript.suggestPrettyPrinting": false,
-  "editor.renderWhitespace": "none"
+  "editor.renderWhitespace": "none",
+  "workbench.activityBar.visible": false
 }
