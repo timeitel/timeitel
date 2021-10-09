@@ -22,4 +22,4 @@ I'm flexible with what tech I use, but here's what I've been working with lately
 [linkedin]: https://www.linkedin.com/in/tim-eitel/
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-Connect-blue
 [portfolio-shield]: https://img.shields.io/badge/Portfolio-View-success
-[email-shield]: https://img.shields.io/badge/Email-Say%20hi-green
+[email-shield]: https://img.shields.io/badge/Email-Say%20hi-brightgreen
