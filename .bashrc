@@ -27,7 +27,7 @@ else
     # PS1="$PS1"' \[\033[37m\][\A]'  # 24h time, white
     PS1="$PS1"'\[\033[0m\]'        # change color
     PS1="$PS1"'\n'                 # new line
-    PS1="$PS1"'> '                 # prompt: 
+    PS1="$PS1"'> '                 # prompt:
 fi
 
 # Aliases
@@ -35,7 +35,6 @@ alias ls='ls -F --color=auto'
 alias ll='ls -lh'
 alias lt='ls --human-readable --size -1 -S --classify'
 alias l.='ls -d .* --color=auto'
-alias left='ls -t -1'
 alias zs='source ~/.zshrc'
 alias c='code '
 alias v='vim '
@@ -47,7 +46,7 @@ alias copy='clip.exe'
 alias cwd='pwd | clip.exe'
 
 alias g='git'
-alias cg='cd `git rev-parse --show-toplevel`'
+alias gcd='cd `git rev-parse --show-toplevel`'
 alias gs='git status'
 alias gpl='git pull'
 alias gf='git fetch origin'
