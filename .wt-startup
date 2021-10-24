@@ -1,1 +1,0 @@
-target: "C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.4.3243.0_x64__8wekyb3d8bbwe\wt.exe" --title Komo -d C:\Users\Tim.Eitel/source/repos ; split-pane -p -H --title Komo -d C:\Users\Tim.Eitel/source/repos ; split-pane -p -V --title Komo -d C:\Users\Tim.Eitel/source/repos
