@@ -6,6 +6,7 @@ I'm flexible with what tech I use, but here's what I've been working with lately
 - React 
 - Node
 - .NET 
+- Flutter
 - PostgreSQL 
 - NoSQL
 - GCP
