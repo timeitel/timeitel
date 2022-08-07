@@ -4,13 +4,12 @@ I'm a software developer based in Perth, WA.
 
 I'm flexible with what tech I use, but here's what I've been working with lately:
 - React 
-- Node
 - .NET 
-- Flutter
 - PostgreSQL 
-- NoSQL
 - GCP
 - Docker
+
+and for side projects, I'm playing around with React Native and Rust 🦀.
 
 ### Feel free to reach out 👨‍💼 
 
