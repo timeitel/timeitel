@@ -2,16 +2,15 @@
 
 I'm a software developer based in Perth, WA.
 
-I'm flexible with what tech I use, but here's what I've been working with lately:
+I like bike shedding my config files and teling people I'm learning rust.
+
+I've been working with:
 - React 
 - .NET 
 - PostgreSQL 
 - GCP
-- Docker
 
-and for side projects, I'm playing around with React Native and Rust 🦀.
-
-### Feel free to reach out 👨‍💼 
+and for side projects, I'm learning Rust btw 🦀.
 
 [![linkedin-shield]][linkedin] [![email-shield]][email] [![portfolio-shield]][website]
 
