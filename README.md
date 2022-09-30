@@ -2,7 +2,7 @@
 
 I'm a software developer based in Perth, WA.
 
-I like bike shedding my config files and telling people I'm learning rust.
+I like bike shedding my config files and telling people I'm learning Rust.
 
 I've been working with:
 - React 
