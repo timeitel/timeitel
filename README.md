@@ -1,8 +1,8 @@
 # Hi, my name's Tim 👋
 
-I'm a software developer based in Perth, WA.
+I'm a software developer based in Melbourne, VIC.
 
-I like bike shedding my config files and telling people I'm learning Rust.
+I like bike shedding my config files and telling people I use Rust.
 
 I've been working with:
 - React 
@@ -10,7 +10,7 @@ I've been working with:
 - PostgreSQL 
 - GCP
 
-and for side projects, I'm learning Rust 🦀.
+and for side projects, I'm working on wasm and native games (using Rust).
 
 [![linkedin-shield]][linkedin] [![email-shield]][email] [![portfolio-shield]][website]
 
