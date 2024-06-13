@@ -2,7 +2,7 @@
 
 I'm a software developer based in Melbourne, VIC.
 
-I like bike shedding my config files and telling people I use Rust.
+I like bike shedding my config and telling people I use Rust.
 
 I've been working with:
 - React 
