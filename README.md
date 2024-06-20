@@ -9,8 +9,13 @@ I've been working with:
 - .NET 
 - PostgreSQL 
 - GCP
+- Go
 
-and for side projects, I'm working on wasm and native games (using Rust).
+and for side projects, I've been using:
+- Go
+- Arduino / Raspberry Pi
+- WASM
+- Rust
 
 [![linkedin-shield]][linkedin] [![email-shield]][email] [![portfolio-shield]][website]
 
